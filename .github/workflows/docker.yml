@@ -17,10 +17,10 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Build docker image
       run: | 
-        docker build --platform linux --tag javierch/websiteplatzi:latest -f CI/Dockerfile .
+        docker build --platform linux --tag javidch/websiteplatzi:latest -f CI/dockerfile .
     - name: Publish docker image
       run: |
-        docker push javierch/websiteplatzi:latest
+        docker push javidch/websiteplatzi:latest
         
 #    - name: App service auth
 #      uses: azure/webapps-deploy@v2
