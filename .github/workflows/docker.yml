@@ -21,6 +21,7 @@ jobs:
     - name: Publish docker image
       run: |
         docker push javierch/websiteplatzi:latest
+        
 #    - name: App service auth
 #      uses: azure/webapps-deploy@v2
 #      with:
